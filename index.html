@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Arcade Offline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+    <header>
+        <h1>Centro Arcade</h1>
+        <p>Tus minijuegos, 100% offline.</p>
+    </header>
+
+    <main class="game-grid">
+        <article class="game-card" onclick="window.location.href='juego.html'">
+            <div class="game-icon">⚔️</div>
+            <h2>Combate Resonante</h2>
+            <p class="game-desc">Acción, Parrys y Reflejos</p>
+        </article>
+        
+        <article class="game-card disabled">
+            <div class="game-icon">🔒</div>
+            <h2>Próximamente</h2>
+            <p class="game-desc">Más juegos en desarrollo</p>
+        </article>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
