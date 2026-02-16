@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Combate Resonante</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div id="btn-back" onclick="window.location.href='index.html'">🔙 Menú</div>
+
+    <div id="hud">
+        <div class="hp-container">
+            <span class="hp-label">TÚ (Esquivar: Izquierda | Atacar: Derecha)</span>
+            <div id="player-hp-bar" class="hp-bar"><div id="player-hp-fill" class="hp-fill blue"></div></div>
+        </div>
+        <div class="hp-container">
+            <span class="hp-label">JEFE (¡Ataca cuando parpadee en amarillo!)</span>
+            <div id="enemy-hp-bar" class="hp-bar"><div id="enemy-hp-fill" class="hp-fill red"></div></div>
+        </div>
+    </div>
+
+    <div id="feedback-text"></div>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="touch-controls">
+        <div id="zone-dodge" class="touch-zone"></div>
+        <div id="zone-attack" class="touch-zone"></div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
